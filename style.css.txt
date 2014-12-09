@@ -1,0 +1,6 @@
+html {
+  font-size: 16pt;
+  font-family: 'Arial', Sans-serif;
+  background: linear-gradient(0deg, #000033, #FFF) no-repeat;
+  min-height: 100%;
+}
