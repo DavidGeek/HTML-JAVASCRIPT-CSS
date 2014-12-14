@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<title>CollaboTour</title>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link href="style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>	
+	<body class="cbp-spmenu-push">
+	<br><br>
+	<div id="header"><h1>New Itinerary</h1></div>
+
+	<div id="title_box">Title</div>
+		<input id="title_input" type="text">
+	<div id="place_box">Place</div>
+		<input id="place_input" type="text">
+	<div id="date_box">Date</div>
+		<input id="date_input" type="date">
+	<div id="cost_box">Estimated Cost</div>
+		<input id="cost_input" type="text">
+	<div id="description_box">Description</div>
+		<input id="description_input" type="text">
+	<div id="itinerary_box">Itinerary</div>
+    <input type="text" id="itninerary_input"/>
+	<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+	<input type="submit" id="create" value="create" onclick="create();">
+
+	</div>
+
+<script>
+(function () {
+  var titleInput = document.getElementById('title_input');
+  var titleBox = document.getElementById('title_box');
+  var placeInput = document.getElementById('place_input');
+  var placeBox = document.getElementById('place_box');
+  var dateInput = document.getElementById('date_input');
+  var dateBox = document.getElementById('date_box');
+  var costInput = document.getElementById('cost_input');
+  var costBox = document.getElementById('cost_box');
+  var descriptionInput = document.getElementById('description_input');
+  var descriptionBox = document.getElementById('description_box');
+  var itineraryInput = document.getElementById('itinerary_input');
+  var itineraryBox = document.getElementById('itinerary_box');
+
+  function addToTitleBox (title) {
+    var p = document.createElement('p');
+    p.textContent = msg;
+    titleBox.appendChild(p);
+  };
+  
+  titleInput.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {
+      addToTitleBox(Input.value);
+    }
+   }
+   
+   create() {
+	  var w = window.open();
+	  w.document.writeln(" <nav class=\"cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left\" id=\"cbp-spmenu-s1\">
+				<h3>Menu</h3>
+				<a href=\"create.\">Create New Itinerary</a>
+				<a href=\"#\">Feedbacks</a>
+				<a href=\"#\">Settings</a>
+				<a href=\"blogin.html\">LogOut</a>
+				<a href=\"#\">Credits</a>
+			</nav>
+		<br><br>
+		
+		<div id=\"header\"><h1>Details</h1></div>
+	
+		<div class=\"container\">
+			<div class=\"main\">
+				<section class=\"buttonset\">
+					<!-- Class \"cbp-spmenu-open\" gets applied to menu and \"cbp-spmenu-push-toleft\" or \"cbp-spmenu-push-toright\" to the body -->
+					<button id=\"showLeftPush\">>></button>
+				</section>
+			</div>
+	
+		<div id=\"main\">
+		
+		<ul id=\"list-nav2\">
+			<li><a href=\"tripview1.html\">OV</a></li>
+			<li><a style=\"background: #ccc;\" href=\"#\">D</a></li>
+			<li><a href=\"tripview3.html\">C</a></li>
+			<li><a href=\"tripview4.html\">Q</a></li>
+		</ul>
+		
+		<div id=\"contents\">
+			<ul>Summary
+				<li>1...</li>
+				<li>2...</li>
+				<li>3...</li>
+			</ul>	
+		
+		</div>	<!-- contents -->
+		
+			<ul id=\"list-nav\">
+				<li><a href=\"#\">Join</a></li>
+				<li><a href=\"#\">Fork</a></li>
+				<li><a href=\"#\">Pull</a></li>
+				<li><a href=\"index.html\">Back</a></li>
+			</ul>
+			<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		
+		
+		
+		</div><!-- #main -->
+	
+	
+	</div><!-- #container -->"
+
+	);
+   }
+   
+  });
+</script>
+
+	<ul id="list-nav">
+		<li><a href="#">Create</a></li>
+		<li><a href="index.html">Cancel</a></li>
+	</ul>
+
+
+</body>
+<div id="footer">Copyright 2014, CollaboTour.com</div>
+</html>

@@ -6,7 +6,7 @@ html {
 }
 
 p {
-  color: #F4640A;
+  color: #008000;
   font-size: 12pt;
 }
 
@@ -17,6 +17,9 @@ img {
 
 ul {
   position: relative;
+  top:20px;
+  text-align:center
+  
   left: 30px;
 }
 
@@ -30,4 +33,18 @@ div {
   min-height: 40px;
   background-color: white;
   padding-left: 25px;
+  transition: all 1.5s;
+}
+#message_box:hover{
+	
+  	border: 1px solid black;
+  	background-color: yellow;
+	
+}
+#lunch_box{
+	 clear: both;
+  	  border: 1px solid black;
+          min-height: 40px;
+          text-align:center;
+          padding-left: 25px;
 }

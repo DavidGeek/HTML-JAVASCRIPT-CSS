@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+	<link href="style.css" rel="stylesheet">
+    <title>Travel Itenenary</title>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+  </head>
+  
+  <body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="login.html">LogIn</a>
+			<a href="#">Profile</a>
+			<a href="#">Feedbacks</a>
+			<a href="#">Settings</a>
+			<a href="#">LogOut</a>
+			<a href="#">Credits</a>
+		</nav>
+		
+		<div id="header"><h1>MainPage</h1></div>
+		<div class="container">
+			<div class="main">
+				<section class="buttonset">
+					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+					<button id="showLeftPush">>></button>
+				</section>
+			</div>
+
+		<h2>trip1</h2>
+		<img src="sample1.jpg">
+		<div id="sidebar">
+			<ul style="decoration:none;">
+				<li>duration</li>
+				<p>2-3 weeks</p>
+				<li>destination</li>
+				<p>Australia</p>
+				<li>num of people</li>
+				<p>6ppl</p>
+				<div id="favorite"><a href="">☆</a></div>		
+			</ul>	
+		</div><!-- #sidebar -->			
+		
+		<h2>trip2</h2>
+		<img src="sample1.jpg">
+		<div id="sidebar">
+			<ul style="decoration:none;">
+				<li>duration</li>
+				<p>2-3 weeks</p>
+				<li>destination</li>
+				<p>Australia</p>
+				<li>num of people</li>
+				<p>6ppl</p>
+				<div id="favorite"><a href="">☆</a></div>		
+			</ul>	
+		</div><!-- #sidebar -->			
+		
+		<h2>trip3</h2>
+		<img src="sample1.jpg">
+		<div id="sidebar">
+			<ul style="decoration:none;">
+				<li>duration</li>
+				<p>2-3 weeks</p>
+				<li>destination</li>
+				<p>Australia</p>
+				<li>num of people</li>
+				<p>6ppl</p>
+				<div id="favorite"><a href="">☆</a></div>		
+			</ul>	
+		</div><!-- #sidebar -->			
+
+	</div>
+	
+		<ul id="list-nav">
+			<li><a href="#">Join</a></li>
+			<li><a href="#">Fork</a></li>
+			<li><a href="#">Pull</a></li>
+		</ul>
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		
+		<script src="js/classie.js"></script>
+		<div id="footer">Copyright 2014, CollaboTour.com</div>
+
+	</body>
+</html>
